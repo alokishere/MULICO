@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+
+
+
+:root {
+  /* Brand */
+  --color-primary: #135bec;
+  --color-accent-teal: #0d9488;
+
+  /* Backgrounds */
+  --bg-light: #f6f6f8;
+  --bg-dark: #101622;
+
+  /* Text */
+  --text-main: #111318;
+  --text-muted: #616f89;
+  --text-white: #ffffff;
+
+  /* Borders */
+  --border-light: #f0f2f4;
+}
+
+.dark {
+  --bg-light: #101622;   /* swap bg */
+  --text-main: #ffffff;  /* swap text */
+  --text-muted: #9ca3af; /* tailwind gray-400 */
+  --border-light: #1f2937; /* tailwind gray-800 */
+}
+
+
+
