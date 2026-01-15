@@ -1,13 +1,24 @@
-import React from "react";
+import React, { Suspense, lazy } from "react";
+import Loader from "../components/ui/Loader";
+import Hero from "../components/sections/home/Hero"; // Import Hero directly for LCP
+
+// Lazy Load Sections below the fold
+const Features = lazy(() => import("../components/sections/home/Features"));
+const Destinations = lazy(() =>
+  import("../components/sections/home/Destinations")
+);
+const CTA = lazy(() => import("../components/sections/home/CTA"));
 
 const Home = () => {
   return (
-    <div className="pt-24 px-4 max-w-7xl mx-auto">
-      <h1 className="text-4xl font-bold mb-4 text-(--text-main)">
-        Home Page
-      </h1>
-      <p className="text-lg text-(--text-muted)">Welcome to Mulico.</p>
-    </div>
+    <main className="min-h-screen">
+      <Hero />
+      <Suspense fallback={<Loader />}>
+        <Features />
+        <Destinations />
+        <CTA />
+      </Suspense>
+    </main>
   );
 };
 

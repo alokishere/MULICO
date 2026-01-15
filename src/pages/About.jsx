@@ -1,15 +1,32 @@
-import React from "react";
+import React, { Suspense, lazy } from "react";
+import Loader from "../components/ui/Loader";
+import AboutHero from "../components/sections/about/Hero"; // Load Hero eagerly
+
+// Lazy Load Sections
+const Stats = lazy(() => import("../components/sections/about/Stats"));
+const Story = lazy(() => import("../components/sections/about/Story"));
+const Values = lazy(() => import("../components/sections/about/Values"));
+const Team = lazy(() => import("../components/sections/about/Team"));
+const Testimonials = lazy(() =>
+  import("../components/sections/about/Testimonials")
+);
+const FAQ = lazy(() => import("../components/sections/about/FAQ"));
+const CTA = lazy(() => import("../components/sections/about/CTA"));
 
 const About = () => {
   return (
-    <div className="pt-24 px-4 max-w-7xl mx-auto">
-      <h1 className="text-4xl font-bold mb-4 text-(--text-main)">
-        About Us
-      </h1>
-      <p className="text-lg text-(--text-muted)">
-        Learn more about our company.
-      </p>
-    </div>
+    <main className="min-h-screen">
+      <AboutHero />
+      <Suspense fallback={<Loader />}>
+        <Stats />
+        <Story />
+        <Values />
+        <Team />
+        <Testimonials />
+        <FAQ />
+        <CTA />
+      </Suspense>
+    </main>
   );
 };
 
