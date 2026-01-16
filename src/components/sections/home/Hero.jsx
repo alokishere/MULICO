@@ -1,13 +1,20 @@
 import React from "react";
 import Button from "../../ui/Button";
+import { useGsapReveal } from "../../../hooks/useGsapReveal";
 
 const Hero = () => {
+  const textRef = useGsapReveal("fade", 0.2); // Delay of 0.2s
+  const imageRef = useGsapReveal("blur", 0.4); // Delay of 0.4s
+
   return (
     <section className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden bg-(--bg-light)">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-8 items-center">
           {/* Text Content */}
-          <div className="text-center lg:text-left max-w-2xl mx-auto lg:mx-0">
+          <div
+            ref={textRef}
+            className="text-center lg:text-left max-w-2xl mx-auto lg:mx-0 opacity-0" // Start with opacity-0
+          >
             <div className="inline-flex items-center px-4 py-2 rounded-full bg-teal-50 text-(--color-accent-teal) text-sm font-medium mb-6">
               <span className="w-2 h-2 rounded-full bg-(--color-accent-teal) mr-2"></span>
               Trusted by 10,000+ Travelers
@@ -68,44 +75,35 @@ const Hero = () => {
             {/* Stats Row within Hero (Mobile) or below text */}
             <div className="mt-12 pt-8 border-t border-(--border-light) grid grid-cols-3 gap-8">
               <div>
-                <div className="text-2xl font-bold text-(--text-main)">
-                  99%
-                </div>
-                <div className="text-sm text-(--text-muted)">
-                  Visa Success
-                </div>
+                <div className="text-2xl font-bold text-(--text-main)">99%</div>
+                <div className="text-sm text-(--text-muted)">Visa Success</div>
               </div>
               <div>
-                <div className="text-2xl font-bold text-(--text-main)">
-                  50+
-                </div>
-                <div className="text-sm text-(--text-muted)">
-                  Countries
-                </div>
+                <div className="text-2xl font-bold text-(--text-main)">50+</div>
+                <div className="text-sm text-(--text-muted)">Countries</div>
               </div>
               <div>
-                <div className="text-2xl font-bold text-(--text-main)">
-                  12+
-                </div>
-                <div className="text-sm text-(--text-muted)">
-                  Years Exp.
-                </div>
+                <div className="text-2xl font-bold text-(--text-main)">12+</div>
+                <div className="text-sm text-(--text-muted)">Years Exp.</div>
               </div>
             </div>
           </div>
 
           {/* Image Content */}
-          <div className="relative lg:h-[600px] w-full rounded-2xl overflow-hidden shadow-2xl bg-gray-200">
+          <div
+            ref={imageRef}
+            className="relative lg:h-[600px] w-full rounded-2xl overflow-hidden shadow-2xl bg-gray-200 opacity-0" // Start with opacity-0
+          >
             {/* Gradient Overlay */}
             <div className="absolute inset-0 bg-linear-gradient-to-t from-black/20 to-transparent z-10"></div>
 
             {/* Placeholder for the travel image */}
             <div className="absolute inset-0 bg-gray-300 flex items-center justify-center text-gray-400">
-              {/* Use a placeholder image that looks like a plane wing or travel */}
               <img
                 src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&q=80&w=1000"
                 alt="Travel"
                 className="w-full h-full object-cover"
+                loading="eager" // Hero image should be eager
               />
             </div>
 

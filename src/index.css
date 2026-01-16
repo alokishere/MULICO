@@ -1,7 +1,13 @@
 @import "tailwindcss";
 
+html {
+  scroll-behavior: smooth;
+}
 
-
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 
 :root {
   /* Brand */
@@ -22,11 +28,8 @@
 }
 
 .dark {
-  --bg-light: #101622;   /* swap bg */
-  --text-main: #ffffff;  /* swap text */
+  --bg-light: #101622; /* swap bg */
+  --text-main: #ffffff; /* swap text */
   --text-muted: #9ca3af; /* tailwind gray-400 */
   --border-light: #1f2937; /* tailwind gray-800 */
 }
-
-
-

@@ -6,7 +6,7 @@ const ServiceDetails = () => {
   return (
     <section className="py-20 bg-(--bg-light)">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-32">
-        {detailedServices.map((service, index) => (
+        {detailedServices.map((service) => (
           <div
             key={service.id}
             className={`flex flex-col lg:flex-row items-center gap-12 lg:gap-20 ${

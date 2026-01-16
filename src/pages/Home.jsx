@@ -1,4 +1,4 @@
-import React, { Suspense, lazy } from "react";
+import React, { Suspense, lazy, useEffect } from "react";
 import Loader from "../components/ui/Loader";
 import Hero from "../components/sections/home/Hero"; // Import Hero directly for LCP
 
@@ -10,6 +10,11 @@ const Destinations = lazy(() =>
 const CTA = lazy(() => import("../components/sections/home/CTA"));
 
 const Home = () => {
+  useEffect(() => {
+    document.title = "Home | Mulico Tour & Travels";
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <main className="min-h-screen">
       <Hero />

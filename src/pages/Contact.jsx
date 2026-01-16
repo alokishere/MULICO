@@ -1,9 +1,14 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Send, CheckCircle, ExternalLink } from "lucide-react";
 import { contactInfo, visaTypes } from "../data/contact";
 import { countries } from "../data/countries";
 
 const Contact = () => {
+  useEffect(() => {
+    document.title = "Contact Us | Mulico Tour & Travels";
+    window.scrollTo(0, 0);
+  }, []);
+
   const [formData, setFormData] = useState({
     fullName: "",
     phone: "",
@@ -70,7 +75,7 @@ const Contact = () => {
                   className="bg-white p-6 rounded-2xl shadow-sm border border-(--border-light) flex items-start gap-5 hover:shadow-md transition-shadow duration-300"
                 >
                   <div
-                    className={`p-3 rounded-xl ${item.bg} ${item.color} flex-shrink-0`}
+                    className={`p-3 rounded-xl ${item.bg} ${item.color} shrink-0`}
                   >
                     <item.icon className="w-6 h-6" />
                   </div>

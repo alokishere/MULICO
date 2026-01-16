@@ -1,4 +1,4 @@
-import React, { Suspense, lazy } from "react";
+import React, { Suspense, lazy, useEffect } from "react";
 import Loader from "../components/ui/Loader";
 import AboutHero from "../components/sections/about/Hero"; // Load Hero eagerly
 
@@ -14,6 +14,11 @@ const FAQ = lazy(() => import("../components/sections/about/FAQ"));
 const CTA = lazy(() => import("../components/sections/about/CTA"));
 
 const About = () => {
+  useEffect(() => {
+    document.title = "About Us | Mulico Tour & Travels";
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <main className="min-h-screen">
       <AboutHero />

@@ -1,4 +1,4 @@
-import React, { Suspense, lazy } from "react";
+import React, { Suspense, lazy, useEffect } from "react";
 import BlogHero from "../components/sections/blog/BlogHero";
 import BlogFilters from "../components/sections/blog/BlogFilters";
 import Loader from "../components/ui/Loader";
@@ -12,6 +12,11 @@ const BlogSidebar = lazy(() =>
 const Pagination = lazy(() => import("../components/sections/blog/Pagination"));
 
 const Blog = () => {
+  useEffect(() => {
+    document.title = "Blog & Updates | Mulico Tour & Travels";
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <main className="min-h-screen bg-white">
       {/* Hero Section */}

@@ -1,4 +1,4 @@
-import React, { Suspense, lazy } from "react";
+import React, { Suspense, lazy, useEffect } from "react";
 import Loader from "../components/ui/Loader";
 import ServiceHero from "../components/sections/services/Hero"; // Eager load
 
@@ -17,6 +17,11 @@ const ServiceFAQ = lazy(() =>
 const CTA = lazy(() => import("../components/sections/services/CTA"));
 
 const Services = () => {
+  useEffect(() => {
+    document.title = "Our Services | Mulico Tour & Travels";
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <main className="min-h-screen">
       <ServiceHero />

@@ -1,29 +1,6 @@
 import React from "react";
 import Card from "../../ui/Card";
-
-const testimonials = [
-  {
-    text: "Mulico made my dream of studying in Canada a reality. Their team was supportive every step of the way.",
-    name: "Mila Kunis",
-    role: "Student Visa",
-    image:
-      "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=100",
-  },
-  {
-    text: "I was worried about the paperwork for my work permit, but the experts at Mulico handled everything flawlessly.",
-    name: "Tom Hiddle",
-    role: "Work Permit",
-    image:
-      "https://images.unsplash.com/photo-1542596594-649edbc13630?auto=format&fit=crop&q=80&w=100",
-  },
-  {
-    text: "Excellent service! They helped my family reunite in the UK. Highly professional and transparent.",
-    name: "Emma Watson",
-    role: "Family Reunion",
-    image:
-      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=100",
-  },
-];
+import { testimonials } from "../../../data/testimonies";
 
 const Testimonials = () => {
   return (
@@ -78,7 +55,7 @@ const Testimonials = () => {
           {testimonials.map((item, index) => (
             <Card key={index} className="p-8">
               <p className="text-(--text-muted) mb-8 leading-relaxed italic">
-                "{item.text}"
+                "{item.content}"
               </p>
               <div className="flex items-center gap-4">
                 <img

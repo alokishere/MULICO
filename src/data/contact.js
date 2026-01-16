@@ -4,7 +4,7 @@ export const contactInfo = [
   {
     id: "phone",
     title: "Call Us",
-    lines: ["+1 (800) 123-4567", "+91 98765 43210"],
+    lines: ["+91 8874739688"],
     subtext: "Available Mon-Fri, 9am-6pm",
     icon: Phone,
     color: "text-blue-600",
@@ -13,7 +13,7 @@ export const contactInfo = [
   {
     id: "email",
     title: "Email Support",
-    lines: ["hello@mulico.com", "support@mulico.com"],
+    lines: ["mulicovisaservices.com", "support@mulico.com"],
     subtext: "24/7 Response time",
     icon: Mail,
     color: "text-emerald-600",
@@ -22,7 +22,7 @@ export const contactInfo = [
   {
     id: "office",
     title: "Visit Office",
-    lines: ["123 Business Bay, Tower A", "Dubai, UAE"],
+    lines: ["2nd Floor, JSV Hyundai Building CP-53, near Engineering College Chauraha, near CNG Petrol Pump, Lucknow, Uttar Pradesh 226021"],
     subtext: "Get directions",
     icon: MapPin,
     color: "text-purple-600",

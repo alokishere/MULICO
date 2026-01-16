@@ -1,22 +1,5 @@
 import React, { useState } from "react";
-
-const fags = [
-  {
-    question: "How long does the visa process usually take?",
-    answer:
-      "The processing time varies depending on the country and visa type. Generally, it can range from 2 weeks to 6 months. Our experts will give you a specific timeline based on your case.",
-  },
-  {
-    question: "Do you guarantee visa approval?",
-    answer:
-      "While we cannot legally guarantee approval as it is at the sole discretion of the embassy, we ensure your application is 100% error-free and strictly adheres to guidelines, maximizing your chances of success.",
-  },
-  {
-    question: "What documents do I need for initial assessment?",
-    answer:
-      "For an initial assessment, we usually require a valid passport copy, CV/Resume, and educational certificates. Additional documents may be needed based on the specific visa category.",
-  },
-];
+import { faqs } from "../../../data/faqs";
 
 const FAQ = () => {
   const [openIndex, setOpenIndex] = useState(0);
@@ -29,7 +12,7 @@ const FAQ = () => {
         </h2>
 
         <div className="space-y-4">
-          {fags.map((faq, index) => (
+          {faqs.map((faq, index) => (
             <div
               key={index}
               className={`border border-(--border-light) rounded-2xl overflow-hidden transition-all duration-300 ${

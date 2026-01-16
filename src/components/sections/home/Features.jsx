@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import Card from "../../ui/Card";
+import { staggerContainer } from "../../../animations/gsap/stagger";
 
 const features = [
   {
@@ -71,6 +72,12 @@ const features = [
 ];
 
 const Features = () => {
+  const containerRef = useRef(null);
+
+  useEffect(() => {
+    staggerContainer(containerRef.current, ".feature-card", 0.3);
+  }, []);
+
   return (
     <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -84,9 +91,12 @@ const Features = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div ref={containerRef} className="grid md:grid-cols-3 gap-8">
           {features.map((feature, index) => (
-            <Card key={index} className="flex flex-col items-start p-8 group">
+            <Card
+              key={index}
+              className="feature-card flex flex-col items-start p-8 group transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
+            >
               <div
                 className={`w-14 h-14 rounded-2xl ${feature.color} flex items-center justify-center mb-6 transition-transform group-hover:scale-110`}
               >
@@ -104,7 +114,7 @@ const Features = () => {
               >
                 Learn More
                 <svg
-                  className="w-4 h-4 ml-1"
+                  className="w-4 h-4 ml-1 transition-transform group-hover:translate-x-1"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"

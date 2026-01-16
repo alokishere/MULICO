@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useParams, Link, useNavigate } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import BlogDetailHero from "../components/sections/blogDetail/BlogDetailHero";
 import BlogDetailContent from "../components/sections/blogDetail/BlogDetailContent";
 import BlogTableOfContents from "../components/sections/blogDetail/BlogTableOfContents";
@@ -11,16 +11,12 @@ import { blogPosts } from "../data/blog/blog";
 
 const BlogDetail = () => {
   const { slug } = useParams();
-  const navigate = useNavigate();
   const [post, setPost] = useState(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Simulate API fetch delay
-    setLoading(true);
     const foundPost = blogPosts.find((p) => p.slug === slug);
 
-    // Simulate small network delay for effect
     const timer = setTimeout(() => {
       setPost(foundPost);
       setLoading(false);

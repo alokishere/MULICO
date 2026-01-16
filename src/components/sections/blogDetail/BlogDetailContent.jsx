@@ -57,7 +57,7 @@ const BlogDetailContent = ({ content, image, title }) => {
                   ))}
                 </ul>
               );
-            case "callout":
+            case "callout": {
               const variantStyles = {
                 info: "bg-blue-50 border-blue-500 text-blue-800",
                 warning: "bg-amber-50 border-amber-500 text-amber-800",
@@ -76,6 +76,7 @@ const BlogDetailContent = ({ content, image, title }) => {
                   <p className="text-sm opacity-90">{block.text}</p>
                 </div>
               );
+            }
             default:
               return null;
           }

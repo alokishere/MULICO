@@ -21,7 +21,7 @@ export const countries = [
     id: 3,
     name: "Australia",
     image:
-      "https://images.unsplash.com/photo-1523482580672-f109ba8cb63e?q=80&w=1000&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1674043581356-af41daf2ecee?q=80&w=1674&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     tags: ["Subclass 189/190", "Tourist"],
     regions: ["Most Popular", "Asia Pacific"],
     description: "Australia welcomes skilled workers and tourists alike.",
@@ -39,7 +39,7 @@ export const countries = [
     id: 5,
     name: "UAE (Dubai)",
     image:
-      "https://images.unsplash.com/photo-1512453979798-5ea936a79483?q=80&w=1000&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1721170628992-ddd25faa162e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     tags: ["Golden Visa", "Freelance"],
     regions: ["Most Popular", "Gulf Countries"],
     description: "Dubai offers a vibrant lifestyle and business opportunities.",
@@ -48,7 +48,7 @@ export const countries = [
     id: 6,
     name: "USA",
     image:
-      "https://images.unsplash.com/photo-1550184333-fb4c8f00138f?q=80&w=1000&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1719947688566-df81f7756a77?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     tags: ["B1/B2 Tourist", "F1 Student"],
     regions: ["Most Popular", "North America"],
     description: "The USA is the land of opportunity.",

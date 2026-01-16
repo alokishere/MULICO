@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom"; // Use Link for SPA nav
 
 const BlogCard = ({ post }) => {
   return (
@@ -8,6 +9,9 @@ const BlogCard = ({ post }) => {
           src={post.image}
           alt={post.title}
           className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+          loading="lazy"
+          width="400"
+          height="224"
         />
         <div className="absolute inset-0 bg-black/0 group-hover:bg-black/5 transition-colors duration-300"></div>
       </div>
@@ -24,7 +28,7 @@ const BlogCard = ({ post }) => {
         </div>
 
         <h3 className="text-xl font-bold text-(--text-main) mb-3 leading-tight group-hover:text-(--color-primary) transition-colors">
-          <a href={`/blog/${post.slug}`}>{post.title}</a>
+          <Link to={`/blog/${post.slug}`}>{post.title}</Link>
         </h3>
 
         <p className="text-(--text-muted) text-sm leading-relaxed mb-6 line-clamp-3">
@@ -32,8 +36,8 @@ const BlogCard = ({ post }) => {
         </p>
 
         <div className="mt-auto">
-          <a
-            href={`/blog/${post.slug}`}
+          <Link
+            to={`/blog/${post.slug}`}
             className="inline-flex items-center text-(--color-primary) text-sm font-semibold hover:underline group/link"
           >
             Read Article
@@ -50,7 +54,7 @@ const BlogCard = ({ post }) => {
                 d="M17 8l4 4m0 0l-4 4m4-4H3"
               />
             </svg>
-          </a>
+          </Link>
         </div>
       </div>
     </article>

@@ -1,10 +1,28 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Search, ArrowUpRight, Download, ChevronDown } from "lucide-react";
 import { countries, countryCategories } from "../data/countries";
+import { staggerContainer } from "../animations/gsap/stagger";
 
 const Countries = () => {
+  useEffect(() => {
+    document.title = "Countries We Serve | Mulico Tour & Travels";
+    window.scrollTo(0, 0);
+  }, []);
+
   const [activeCategory, setActiveCategory] = useState("Most Popular");
   const [searchQuery, setSearchQuery] = useState("");
+  const gridRef = useRef(null);
+
+  // Re-run stagger animation when category changes or filtered list changes
+  useEffect(() => {
+    // Small timeout to allow DOM to update
+    const timer = setTimeout(() => {
+      if (gridRef.current) {
+        staggerContainer(gridRef.current, ".country-card", 0.1);
+      }
+    }, 100);
+    return () => clearTimeout(timer);
+  }, [activeCategory, searchQuery]);
 
   const filteredCountries = countries.filter((country) => {
     const matchesCategory =
@@ -72,11 +90,14 @@ const Countries = () => {
 
       {/* Countries Grid */}
       <div className="max-w-7xl mx-auto px-4 pb-24">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div
+          ref={gridRef}
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 min-h-[400px]"
+        >
           {filteredCountries.map((country) => (
             <div
               key={country.id}
-              className="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-(--border-light) flex flex-col"
+              className="country-card group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-(--border-light) flex flex-col opacity-0" // Start opacity 0 for GSAP
             >
               {/* Image Container with Overlay */}
               <div className="relative h-48 overflow-hidden">
@@ -84,6 +105,9 @@ const Countries = () => {
                   src={country.image}
                   alt={country.name}
                   className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+                  loading="lazy"
+                  width="400"
+                  height="250"
                 />
                 <div className="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors duration-300" />
               </div>
