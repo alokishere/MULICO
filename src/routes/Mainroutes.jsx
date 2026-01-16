@@ -5,6 +5,7 @@ import About from "../pages/About";
 import Services from "../pages/Services";
 import Countries from "../pages/Countries";
 import Blog from "../pages/Blog";
+import BlogDetail from "../pages/BlogDetail";
 import Contact from "../pages/Contact";
 
 const MainRoutes = () => {
@@ -15,6 +16,7 @@ const MainRoutes = () => {
       <Route path="/services" element={<Services />} />
       <Route path="/countries" element={<Countries />} />
       <Route path="/blog" element={<Blog />} />
+      <Route path="/blog/:slug" element={<BlogDetail />} />
       <Route path="/contact" element={<Contact />} />
     </Routes>
   );
