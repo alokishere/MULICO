@@ -12,7 +12,7 @@ const CTA = () => {
           Book a free consultation today. We process visas in 2 weeks on average
           for qualified applicants.
         </p>
-        <Button className="bg-white text-blue-600 hover:bg-blue-50 border-none shadow-xl px-10 py-4 text-lg">
+        <Button href="/contact" className="bg-black text-white hover:bg-white hover:text-black border-none shadow-xl px-10 py-4 text-lg">
           Book Free Consultation
         </Button>
       </div>

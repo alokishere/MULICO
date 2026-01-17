@@ -78,7 +78,7 @@ const BlogSidebar = () => {
           Book a free 15-minute consultation with our senior consultants.
         </p>
 
-        <Button className="w-full bg-white text-blue-600 hover:bg-gray-50 text-sm py-2.5 border-none shadow-lg">
+        <Button className="w-full bg-black hover:bg-black/80 hover:scale-105 text-sm py-2.5 border-none shadow-lg">
           Book Consultation
         </Button>
       </div>

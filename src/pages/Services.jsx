@@ -10,7 +10,6 @@ const ServiceDetails = lazy(() =>
   import("../components/sections/services/ServiceDetails")
 );
 const Process = lazy(() => import("../components/sections/services/Process"));
-const Pricing = lazy(() => import("../components/sections/services/Pricing"));
 const ServiceFAQ = lazy(() =>
   import("../components/sections/services/ServiceFAQ")
 );
@@ -29,7 +28,6 @@ const Services = () => {
         <ServiceGrid />
         <ServiceDetails />
         <Process />
-        <Pricing />
         <ServiceFAQ />
         <CTA />
       </Suspense>

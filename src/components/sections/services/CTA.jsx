@@ -13,7 +13,7 @@ const CTA = () => {
           right visa options for you.
         </p>
         <div className="flex flex-col sm:flex-row justify-center gap-4">
-          <Button className="bg-white text-(--text-main) hover:bg-blue-50 border-none">
+          <Button className="bg-black text-white hover:bg-white hover:text-black border-none">
             Free Assessment
           </Button>
           <Button

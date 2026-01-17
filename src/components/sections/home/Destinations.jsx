@@ -17,7 +17,7 @@ const destinations = [
     name: "Schengen",
     type: "Europe Travel",
     image:
-      "https://images.unsplash.com/photo-1499856871940-a09627c6dcf6?auto=format&fit=crop&q=80&w=600",
+      "https://www.schengenvisaitinerary.com/blog/wp-content/uploads/2019/07/blog-post-copy.jpg",
   },
   {
     name: "USA",

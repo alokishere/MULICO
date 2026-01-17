@@ -1,4 +1,4 @@
-
+import logo from "../../assets/logo.avif";
 const Footer = () => {
   return (
     <footer className="bg-white pt-16 pb-8 border-t border-(--border-light)]">
@@ -7,12 +7,10 @@ const Footer = () => {
           {/* Brand Column */}
           <div>
             <div className="flex items-center gap-2 mb-6">
-              <div className="w-8 h-8 rounded-lg bg-(--color-primary)] flex items-center justify-center text-white font-bold text-xl">
-                M
+              <div className="w-28 h-28 rounded-lg bg-(--color-primary)] flex items-center justify-center text-white font-bold text-xl">
+                <a href="/"> <img src={logo} alt="logo" /></a>
+
               </div>
-              <span className="text-xl font-bold text-(--text-main)]">
-                Mulico
-              </span>
             </div>
             <p className="text-(--text-muted) text-sm leading-relaxed mb-6">
               Trusted global visa consultancy partner making travel accessible
@@ -122,9 +120,7 @@ const Footer = () => {
                     d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
                   />
                 </svg>
-                123 Business Ave, Suite 400
-                <br />
-                New York, NY 10001
+               2nd Floor, JSV Hyundai Building CP-53 Sitapur Road Yojna,<br /> Near Engineering College Chauraha, <br />Lucknow Uttar Pradesh India
               </li>
               <li className="flex items-center gap-3">
                 <svg
@@ -140,7 +136,7 @@ const Footer = () => {
                     d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
                   />
                 </svg>
-                +1 (555) 123-4567
+                +91 8874739688
               </li>
               <li className="flex items-center gap-3">
                 <svg
@@ -156,7 +152,7 @@ const Footer = () => {
                     d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
                   />
                 </svg>
-                hello@mulico.com
+            mulicovisaservices@gmail.com
               </li>
             </ul>
           </div>

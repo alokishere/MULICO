@@ -83,29 +83,38 @@ const Navbar = () => {
           {/* Right Side Actions */}
           <div className="hidden lg:flex items-center gap-8">
             <a
-              href="https://wa.me/9580908191"
+              href={`https://wa.me/+919580908191?text=${encodeURIComponent("Hello, I need help with my visa application.")}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 group"
+              className="flex items-center gap-3 group"
             >
-              <div className="p-2 bg-green-50/50 rounded-full group-hover:bg-green-100 transition-colors">
+              <div className="p-2 bg-green-50 rounded-full group-hover:bg-green-100 transition-colors border border-green-100">
                 <FaWhatsapp className="w-5 h-5 text-green-500" />
               </div>
-              <span className="text-(--color-primary) font-semibold group-hover:opacity-80 transition-opacity">
-                WhatsApp
-              </span>
+              <div className="flex flex-col">
+                <span className="text-[10px] font-bold text-green-600 uppercase tracking-wider leading-none">Chat with us</span>
+                <span className="text-sm font-semibold text-(--text-main)">WhatsApp</span>
+              </div>
             </a>
 
-            <button className="flex items-center gap-2 bg-(--color-primary) text-white px-6 py-2.5 rounded-full font-semibold hover:bg-blue-700 transition-all shadow-lg hover:-translate-y-0.5 active:translate-y-0 active:scale-95">
-              <Phone className="w-4 h-4 fill-current" />
-              <span>Call now</span>
-            </button>
+            <a
+              href="tel:+919580908191"
+              className="flex items-center gap-3 bg-(--color-primary) text-white px-6 py-2 rounded-full hover:bg-blue-700 transition-all shadow-lg hover:-translate-y-0.5 active:translate-y-0 active:scale-95"
+            >
+              <div className="p-2 bg-white/20 rounded-full">
+                <Phone className="w-4 h-4 fill-current" />
+              </div>
+              <div className="flex flex-col">
+                <span className="text-[10px] font-bold uppercase tracking-wider opacity-90 leading-none">Call Now</span>
+                <span className="text-sm font-bold">+91 95809 08191</span>
+              </div>
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
           <div className="lg:hidden flex items-center gap-4">
             <a
-              href="https://wa.me/9580908191"
+              href={`https://wa.me/+919580908191?text=${encodeURIComponent("Hello, I need help with my visa application.")}`}
               className="text-green-500"
             >
               <FaWhatsapp className="w-6 h-6" />

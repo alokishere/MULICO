@@ -16,8 +16,7 @@ export const blogPosts = [
     date: "Oct 12, 2024",
     readTime: "5 min read",
     image:
-      "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&q=80&w=800",
-    slug: "uk-student-visa-guide",
+      "https://ieltsmaterial-content.s3.ap-south-1.amazonaws.com/blogContent/blog/uk_student_visa_requirements_in_2024_a_comprehensive_guide_1708450958.webp",
     author: {
       name: "Sarah Jenkins",
       role: "Senior Education Consultant",
@@ -80,7 +79,7 @@ export const blogPosts = [
     date: "Oct 10, 2024",
     readTime: "7 min read",
     image:
-      "https://images.unsplash.com/photo-1560179707-f14e90ef3dab?auto=format&fit=crop&q=80&w=800",
+      "https://www.greentreeimmigration.com/blog/wp-content/uploads/2023/07/Improve-Your-Canada-Express-Entry-CRS-Score.webp",
     slug: "canada-crs-score-tips",
     author: {
       name: "David Chen",
@@ -156,7 +155,7 @@ export const blogPosts = [
     date: "Oct 05, 2024",
     readTime: "6 min read",
     image:
-      "https://images.unsplash.com/photo-1523482580672-01e6f086552c?auto=format&fit=crop&q=80&w=800",
+      "https://www.pssremovals.com/wp-content/uploads/2025/11/Family-Moving-to-Australia.jpg",
     slug: "australia-family-migration",
     author: {
       name: "Team Mulico",
@@ -223,6 +222,6 @@ export const popularPosts = [
     title: "Dubai Golden Visa: Are You Eligible?",
     date: "Aug 20, 2024",
     image:
-      "https://images.unsplash.com/photo-1512453979798-5ea904ac6666?auto=format&fit=crop&q=80&w=200",
+      "https://img.etimg.com/thumb/width-300,height-225,imgsize-74440,resizemode-75,msid-122294786/nri/migrate/indians-can-now-get-uaes-golden-visa-without-trade-license-property-purchase/uae-golden-visa.jpg",
   },
 ];
