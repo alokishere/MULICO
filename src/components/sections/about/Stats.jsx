@@ -28,10 +28,12 @@ const Stats = () => {
           {stats.map((stat, index) => (
             <div key={index} className="flex flex-col items-center">
               <span
-                className="stat-counter text-4xl lg:text-5xl font-bold text-white mb-2"
+                className={`text-4xl lg:text-5xl font-bold text-white mb-2 ${
+                  stat.value === "24/7" ? "" : "stat-counter"
+                }`}
                 data-target={stat.value}
               >
-                0
+                {stat.value === "24/7" ? stat.value : 0}
               </span>
               <span className="text-blue-100 text-sm lg:text-base font-medium">
                 {stat.label}

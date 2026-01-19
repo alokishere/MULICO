@@ -44,8 +44,8 @@ const features = [
     color: "bg-emerald-50",
   },
   {
-    title: "Student Support",
-    desc: "From university selection to visa approval, we guide students towards their educational dreams abroad.",
+    title: "Working Visa",
+    desc: "We help you get your work visa approved in no time. We handle the documentation so you don't have to.",
     icon: (
       <svg
         className="w-6 h-6 text-orange-600"

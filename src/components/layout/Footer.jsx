@@ -1,5 +1,35 @@
 import logo from "../../assets/logo.avif";
 const Footer = () => {
+  const services = [
+    {
+      id: 1,
+      label: "Visa Consultancy",
+      href: `https://wa.me/+919580908191?text=${encodeURIComponent(
+        "Hello, I need help with my visa application."
+      )}`
+    },
+    {
+      id: 2,
+      label: "Flight Booking",
+      href: `https://wa.me/+919580908191?text=${encodeURIComponent(
+        "Hello, I need help with my flight booking."
+      )}`,
+    },
+    {
+      id: 3,
+      label: "Hotel Reservations",
+      href: `https://wa.me/+919580908191?text=${encodeURIComponent(
+        "Hello, I need help with my hotel reservation."
+      )}`,
+    },
+    {
+      id: 4,
+      label: "Travel Insurance",
+      href: `https://wa.me/+919580908191?text=${encodeURIComponent(
+        "Hello, I need help with my travel insurance."
+      )}`,
+    },
+  ];
   return (
     <footer className="bg-white pt-16 pb-8 border-t border-(--border-light)]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -8,8 +38,10 @@ const Footer = () => {
           <div>
             <div className="flex items-center gap-2 mb-6">
               <div className="w-28 h-28 rounded-lg bg-(--color-primary)] flex items-center justify-center text-white font-bold text-xl">
-                <a href="/"> <img src={logo} alt="logo" /></a>
-
+                <a href="/">
+                  {" "}
+                  <img src={logo} alt="logo" />
+                </a>
               </div>
             </div>
             <p className="text-(--text-muted) text-sm leading-relaxed mb-6">
@@ -24,7 +56,7 @@ const Footer = () => {
             <ul className="space-y-4 text-sm text-(--text-muted)">
               <li>
                 <a
-                  href="#"
+                  href="/about"
                   className="hover:text-(--color-primary) transition-colors"
                 >
                   About Us
@@ -32,7 +64,7 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="/contact"
                   className="hover:text-(--color-primary) transition-colors"
                 >
                   Careers
@@ -40,7 +72,7 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="/contact"
                   className="hover:text-(--color-primary) transition-colors"
                 >
                   Partners
@@ -48,7 +80,7 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="/blog"
                   className="hover:text-(--color-primary) transition-colors"
                 >
                   Blog
@@ -60,39 +92,21 @@ const Footer = () => {
           {/* Services Links */}
           <div>
             <h3 className="font-bold text-(--text-main)] mb-6">Services</h3>
-            <ul className="space-y-4 text-sm text-(--text-muted)]">
-              <li>
-                <a
-                  href="#"
+            <ul className="space-y-4 text-sm text-(--text-muted)">
+              {services.map((service) => (
+                <li key={service.id}
                   className="hover:text-(--color-primary) transition-colors"
                 >
-                  Visa Consultancy
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="hover:text-(--color-primary) transition-colors"
-                >
-                  Flight Booking
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="hover:text-(--color-primary) transition-colors"
-                >
-                  Hotel Reservations
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="hover:text-(--color-primary) transition-colors"
-                >
-                  Travel Insurance
-                </a>
-              </li>
+                  <a
+                    href={service.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-(--color-primary) transition-colors"
+                  >
+                    {service.label}
+                  </a>
+                </li>
+              ))}
             </ul>
           </div>
 
@@ -120,7 +134,9 @@ const Footer = () => {
                     d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
                   />
                 </svg>
-               2nd Floor, JSV Hyundai Building CP-53 Sitapur Road Yojna,<br /> Near Engineering College Chauraha, <br />Lucknow Uttar Pradesh India
+                2nd Floor, JSV Hyundai Building CP-53 Sitapur Road Yojna,
+                <br /> Near Engineering College Chauraha, <br />
+                Lucknow Uttar Pradesh India
               </li>
               <li className="flex items-center gap-3">
                 <svg
@@ -152,7 +168,7 @@ const Footer = () => {
                     d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
                   />
                 </svg>
-            mulicovisaservices@gmail.com
+                mulicovisaservices@gmail.com
               </li>
             </ul>
           </div>

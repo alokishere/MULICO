@@ -2,22 +2,22 @@ import React from "react";
 
 const destinations = [
   {
-    name: "Canada",
+    name: "Gulf Countries",
     type: "Work & Study Visas",
     image:
-      "https://images.unsplash.com/photo-1517935706615-2717063c2225?auto=format&fit=crop&q=80&w=600",
+      "https://scd.infomigrants.net/media/resize/my_image_big/81b261f0e8b67e171263186aea3cbb2f89dd2053.jpeg",
   },
   {
-    name: "United Kingdom",
-    type: "Tourist & Visit Visas",
+    name: "Qatar",
+    type: "Work & Visit Visas",
+    image:
+      "https://visitqatar.com/adobe/dynamicmedia/deliver/dm-aid--b6dbf0fc-c71f-477b-bb86-3a11903215f9/hamad-international-airport-2.jpg?preferwebp=true&quality=75",
+  },
+  {
+    name: "UK",
     image:
       "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&q=80&w=600",
-  },
-  {
-    name: "Schengen",
-    type: "Europe Travel",
-    image:
-      "https://www.schengenvisaitinerary.com/blog/wp-content/uploads/2019/07/blog-post-copy.jpg",
+    type: "Tourist & Visit Visas",
   },
   {
     name: "USA",
@@ -40,9 +40,6 @@ const Destinations = () => {
               Explore the most sought-after countries for our clients.
             </p>
           </div>
-          <button className="px-6 py-2 rounded-full border border-(--border-light) bg-white text-sm font-medium hover:bg-gray-50 transition-colors">
-            View All Countries
-          </button>
         </div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">

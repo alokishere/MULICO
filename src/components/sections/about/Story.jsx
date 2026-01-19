@@ -59,7 +59,7 @@ const Story = () => {
               Our Story
             </h4>
             <h2 className="text-3xl lg:text-4xl font-bold text-(--text-main) mb-6">
-              Building Bridges Across Borders Since 2014
+              Building Bridges Across Borders Since 2016
             </h2>
             <p className="text-(--text-muted) mb-8 leading-relaxed">
               Mulico started with a simple belief: that global travel should be
@@ -116,17 +116,17 @@ const Story = () => {
           {/* Image Side */}
           <div className="w-full lg:w-1/2 relative">
             <div className="rounded-2xl overflow-hidden shadow-2xl relative z-10 w-full h-[500px]">
-              <img
+              <img 
                 src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=80&w=1000"
                 alt="Meeting"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover hover:scale-105 transition duration-300"
               />
             </div>
 
             {/* CEO Card Badge */}
             <div className="absolute bottom-8 left-8 lg:-left-8 z-20 bg-white p-4 rounded-xl shadow-lg border border-(--border-light) max-w-xs flex gap-4 items-center">
               <img
-                src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80&w=100"
+                src="https://images.pexels.com/photos/30324827/pexels-photo-30324827.jpeg"
                 alt="CEO"
                 className="w-12 h-12 rounded-full object-cover"
               />
@@ -135,7 +135,7 @@ const Story = () => {
                   "We don't just process visas; we fulfill dreams."
                 </p>
                 <p className="text-sm font-bold text-(--text-main)">
-                  Alexandra Frank
+                  Aman Kumar
                 </p>
               </div>
             </div>

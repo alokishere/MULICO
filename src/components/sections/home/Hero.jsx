@@ -17,7 +17,7 @@ const Hero = () => {
           >
             <div className="inline-flex items-center px-4 py-2 rounded-full bg-teal-50 text-(--color-accent-teal) text-sm font-medium mb-6">
               <span className="w-2 h-2 rounded-full bg-(--color-accent-teal) mr-2"></span>
-              Trusted by 10,000+ Travelers
+              Turning Dreams into Destinations
             </div>
 
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-(--text-main) mb-6">
@@ -32,6 +32,10 @@ const Hero = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+              <a 
+                 href={`https://wa.me/+919580908191?text=${encodeURIComponent("Hello, I need help with my visa application.")}`}
+              target="_blank"
+              rel="noopener noreferrer">
               <Button>
                 Start Your Application
                 <svg
@@ -48,28 +52,7 @@ const Hero = () => {
                   />
                 </svg>
               </Button>
-              <Button variant="secondary" className="gap-2">
-                <svg
-                  className="w-5 h-5"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"
-                  />
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                  />
-                </svg>
-                How it Works
-              </Button>
+              </a>
             </div>
 
             {/* Stats Row within Hero (Mobile) or below text */}
@@ -83,7 +66,7 @@ const Hero = () => {
                 <div className="text-sm text-(--text-muted)">Countries</div>
               </div>
               <div>
-                <div className="text-2xl font-bold text-(--text-main)">12+</div>
+                <div className="text-2xl font-bold text-(--text-main)">10+</div>
                 <div className="text-sm text-(--text-muted)">Years Exp.</div>
               </div>
             </div>
@@ -92,7 +75,7 @@ const Hero = () => {
           {/* Image Content */}
           <div
             ref={imageRef}
-            className="relative lg:h-[600px] w-full rounded-2xl overflow-hidden shadow-2xl bg-gray-200 opacity-0" // Start with opacity-0
+            className="relative lg:h-[500px] w-full rounded-2xl overflow-hidden shadow-2xl bg-gray-200 opacity-0" // Start with opacity-0
           >
             {/* Gradient Overlay */}
             <div className="absolute inset-0 bg-linear-gradient-to-t from-black/20 to-transparent z-10"></div>

@@ -35,4 +35,23 @@ export const testimonials = [
       "The team at Mulico is very knowledgeable. They helped me plan my itinerary and apply for the visitor visa without any hassle.",
     rating: 5,
   },
+  {
+    id: 5,
+    name: "John Doe",
+    role: "Tourist in Australia",
+    image: "https://randomuser.me/api/portraits/women/68.jpg",
+    content:
+      "The team at Mulico is very knowledgeable. They helped me plan my itinerary and apply for the visitor visa without any hassle.",
+    rating: 5,
+  },
+  {
+    id: 6,
+    name: "John Doe",
+    role: "Tourist in Australia",
+    image: "https://randomuser.me/api/portraits/women/68.jpg",
+    content:
+      "The team at Mulico is very knowledgeable. They helped me plan my itinerary and apply for the visitor visa without any hassle.",
+    rating: 5,
+  }
 ];
+0

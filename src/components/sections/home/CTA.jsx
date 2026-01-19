@@ -21,9 +21,15 @@ const CTA = () => {
               </p>
             </div>
             <div className="shrink-0">
-              <Button className="bg-black text-white hover:bg-gray-100 hover:text-black shadow-xl border-none">
-                Free Consultation
-              </Button>
+              <a
+                href={`https://wa.me/+919580908191?text=${encodeURIComponent("Hello, I need help with my visa application.")}`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button className="bg-black text-white hover:bg-gray-100 hover:text-black shadow-xl border-none">
+                  Free Consultation
+                </Button>
+              </a>
             </div>
           </div>
         </div>

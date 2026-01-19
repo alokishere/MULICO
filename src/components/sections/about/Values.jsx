@@ -99,7 +99,7 @@ const Values = () => {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {values.map((item, index) => (
-            <Card key={index} className="flex flex-col items-start p-8">
+            <Card key={index} className="flex flex-col items-start p-8 hover:scale-105 hover:shadow-lg transition-all linear duration-300">
               <div
                 className={`w-12 h-12 rounded-lg ${item.iconClass} flex items-center justify-center mb-6`}
               >
