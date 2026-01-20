@@ -28,7 +28,7 @@ export const testimonials = [
   },
   {
     id: 4,
-    name: "Sarah John",
+    name: "Susila Tiwari",
     role: "Tourist in Australia",
     image: "https://randomuser.me/api/portraits/women/68.jpg",
     content:
@@ -37,21 +37,20 @@ export const testimonials = [
   },
   {
     id: 5,
-    name: "John Doe",
+    name: "Muskan Yadav",
     role: "Tourist in Australia",
-    image: "https://randomuser.me/api/portraits/women/68.jpg",
+    image: "https://randomuser.me/api/portraits/women/28.jpg",
     content:
-      "The team at Mulico is very knowledgeable. They helped me plan my itinerary and apply for the visitor visa without any hassle.",
+      "Emotionally touched by the service provided by Mulico. They made the entire process of getting a student visa smooth and stress-free.",
     rating: 5,
   },
   {
     id: 6,
-    name: "John Doe",
+    name: "Raj Sharma",
     role: "Tourist in Australia",
-    image: "https://randomuser.me/api/portraits/women/68.jpg",
+    image: "https://randomuser.me/api/portraits/men/68.jpg",
     content:
-      "The team at Mulico is very knowledgeable. They helped me plan my itinerary and apply for the visitor visa without any hassle.",
+      "They are very professional and helpful. They helped me plan my itinerary and apply for the visitor visa without any hassle.",
     rating: 5,
   }
 ];
-0

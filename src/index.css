@@ -34,9 +34,6 @@ body {
   --border-light: #1f2937; /* tailwind gray-800 */
 }
 
-
-
-
 /* Smooth overall feel */
 .hero-collage {
   will-change: transform;
@@ -77,7 +74,9 @@ body {
 
 /* ---------- IMAGE HOVER EFFECTS ---------- */
 .hero-img {
-  transition: transform 400ms ease, box-shadow 400ms ease;
+  transition:
+    transform 400ms ease,
+    box-shadow 400ms ease;
   transform: translateZ(0);
 }
 
@@ -110,7 +109,8 @@ body {
 }
 
 @keyframes heroFloat1 {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0px);
   }
   50% {
@@ -119,7 +119,8 @@ body {
 }
 
 @keyframes heroFloat2 {
-  0%, 100% {
+  0%,
+  100% {
     transform: translate(0px, 0px);
   }
   50% {
@@ -128,7 +129,8 @@ body {
 }
 
 @keyframes heroFloat3 {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0px);
   }
   50% {
@@ -138,10 +140,28 @@ body {
 
 /* ---------- BUTTON HOVER (minimal) ---------- */
 .hero-btn-hover {
-  transition: transform 250ms ease, filter 250ms ease;
+  transition:
+    transform 250ms ease,
+    filter 250ms ease;
 }
 
 .hero-btn-hover:hover {
   transform: translateY(-2px);
   filter: brightness(1.02);
+}
+
+/* ---------- MODAL ANIMATION ---------- */
+@keyframes fadeInZoom {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-modal {
+  animation: fadeInZoom 0.3s ease-out forwards;
 }

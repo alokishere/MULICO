@@ -1,6 +1,7 @@
 import React from "react";
 import Button from "../../ui/Button";
 import { detailedServices } from "../../../data/services";
+import GoToWhatsapp from "../../ui/GoToWhatsapp";
 
 const ServiceDetails = () => {
   return (
@@ -49,7 +50,9 @@ const ServiceDetails = () => {
                 ))}
               </ul>
 
-              <Button>Check Eligibility</Button>
+              <GoToWhatsapp message="I am interested in your service">
+                <Button>Check Eligibility</Button>
+              </GoToWhatsapp>
             </div>
 
             {/* Image */}

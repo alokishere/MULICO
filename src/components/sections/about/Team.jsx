@@ -4,7 +4,7 @@ const Team = () => {
   const teamMember = {
     name: "Mr. ANIL RAGHAV",
     role: "Founder & CEO",
-    company: "Sarathi India IT Pvt. Ltd., Lucknow",
+    company: "Sarathi India IT Pvt. Ltd., & MULICO TOUR & TRAVELS",
     location: "Lucknow, Uttar Pradesh, India",
     highlights: [
       "10+ years in IT services & digital transformation",
@@ -13,7 +13,7 @@ const Team = () => {
       "DM for Free Resume Audit",
     ],
     shortBio:
-      "Founder & CEO of Sarathi India IT Pvt. Ltd. in Lucknow. Passionate about bridging the gap between IT solutions and real-world business challenges through training, consulting, and career coaching. Helping students build job-ready skills and crack high-paying roles with practical mentorship.",
+      "Founder & CEO of Sarathi India IT Pvt. Ltd. & MULICO TOUR & TRAVELS in Lucknow. Passionate about bridging the gap between IT solutions and real-world business challenges through training, consulting, and career coaching. Helping students build job-ready skills and crack high-paying roles with practical mentorship.",
     image:
       "https://media.licdn.com/dms/image/v2/D5603AQFOTuH_GuHy_A/profile-displayphoto-crop_800_800/B56Zsxp6uhIYAM-/0/1766064633665?e=1770249600&v=beta&t=6L0PwOhdiLnkrLXypGTFbjqstogZA7wDiG3I6nLSAkE",
   };
