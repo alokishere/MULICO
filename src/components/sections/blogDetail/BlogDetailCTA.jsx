@@ -1,5 +1,6 @@
 import React from "react";
 import Button from "../../ui/Button";
+import GoToWhatsapp from "../../ui/GoToWhatsapp";
 
 const BlogDetailCTA = () => {
   return (
@@ -14,10 +15,11 @@ const BlogDetailCTA = () => {
         Our experts can guide you through the entire visa process. Book a slot
         today.
       </p>
-
-      <Button className="w-full bg-white text-blue-600 hover:bg-gray-50 border-none relative z-10">
+      <GoToWhatsapp>
+      <Button className="w-full bg-blue-900 text-white hover:bg-blue-700 border-none relative z-10">
         Book Consultation
       </Button>
+      </GoToWhatsapp>
     </div>
   );
 };

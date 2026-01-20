@@ -9,7 +9,7 @@ const BlogGrid = lazy(() => import("../components/sections/blog/BlogGrid"));
 const BlogSidebar = lazy(() =>
   import("../components/sections/blog/BlogSidebar")
 );
-const Pagination = lazy(() => import("../components/sections/blog/Pagination"));
+// const Pagination = lazy(() => import("../components/sections/blog/Pagination"));
 
 const Blog = () => {
   useEffect(() => {
@@ -17,7 +17,7 @@ const Blog = () => {
     window.scrollTo(0, 0);
   }, []);
 
-  return (
+  return (  
     <main className="min-h-screen bg-white">
       {/* Hero Section */}
       <BlogHero />
@@ -33,7 +33,7 @@ const Blog = () => {
             <div className="lg:col-span-8">
               <Suspense fallback={<Loader />}>
                 <BlogGrid posts={blogPosts} />
-                <Pagination />
+                {/* <Pagination /> */}
               </Suspense>
             </div>
 
