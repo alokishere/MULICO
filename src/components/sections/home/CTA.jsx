@@ -22,7 +22,7 @@ const CTA = () => {
             </div>
             <div className="shrink-0">
               <a
-                href={`https://wa.me/+919580908191?text=${encodeURIComponent("Hello, I need help with my visa application.")}`}
+                href={`https://wa.me/+918948865331?text=${encodeURIComponent("Hello, I need help with my visa application.")}`}
                 target="_blank"
                 rel="noopener noreferrer"
               >

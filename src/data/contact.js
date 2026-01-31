@@ -4,7 +4,7 @@ export const contactInfo = [
   {
     id: "phone",
     title: "Call Us",
-    lines: ["+91 8874739688"],
+    lines: ["+91 8948865331"],
     subtext: "Available Mon-Fri, 9am-6pm",
     icon: Phone,
     color: "text-blue-600",

@@ -4,28 +4,28 @@ const Footer = () => {
     {
       id: 1,
       label: "Visa Consultancy",
-      href: `https://wa.me/+919580908191?text=${encodeURIComponent(
+      href: `https://wa.me/+918948865331?text=${encodeURIComponent(
         "Hello, I need help with my visa application."
       )}`
     },
     {
       id: 2,
       label: "Flight Booking",
-      href: `https://wa.me/+919580908191?text=${encodeURIComponent(
+      href: `https://wa.me/+918948865331?text=${encodeURIComponent(
         "Hello, I need help with my flight booking."
       )}`,
     },
     {
       id: 3,
       label: "Hotel Reservations",
-      href: `https://wa.me/+919580908191?text=${encodeURIComponent(
+      href: `https://wa.me/+918948865331?text=${encodeURIComponent(
         "Hello, I need help with my hotel reservation."
       )}`,
     },
     {
       id: 4,
       label: "Travel Insurance",
-      href: `https://wa.me/+919580908191?text=${encodeURIComponent(
+      href: `https://wa.me/+918948865331?text=${encodeURIComponent(
         "Hello, I need help with my travel insurance."
       )}`,
     },
@@ -152,7 +152,7 @@ const Footer = () => {
                     d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
                   />
                 </svg>
-                +91 8874739688
+          +918948865331
               </li>
               <li className="flex items-center gap-3">
                 <svg

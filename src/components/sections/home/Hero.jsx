@@ -33,7 +33,7 @@ const Hero = () => {
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <a 
-                 href={`https://wa.me/+919580908191?text=${encodeURIComponent("Hello, I need help with my visa application.")}`}
+                 href={`https://wa.me/+918948865331?text=${encodeURIComponent("Hello, I need help with my visa application.")}`}
               target="_blank"
               rel="noopener noreferrer">
               <Button>

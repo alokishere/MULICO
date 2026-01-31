@@ -7,7 +7,7 @@ import logo from "../../assets/logo.avif";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-
+const number  = "+918948865331"
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 20) {
@@ -83,7 +83,7 @@ const Navbar = () => {
           {/* Right Side Actions */}
           <div className="hidden lg:flex items-center gap-8">
             <a
-              href={`https://wa.me/+919580908191?text=${encodeURIComponent("Hello, I need help with my visa application.")}`}
+              href={`https://wa.me/${number}?text=${encodeURIComponent("Hello, I need help with my visa application.")}`}
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-3 group"
@@ -98,7 +98,9 @@ const Navbar = () => {
             </a>
 
             <a
-              href="tel:+919580908191"
+              href={`tel:${number}`}
+              target="_blank"
+              rel="noopener noreferrer"
               className="flex items-center gap-3 bg-(--color-primary) text-white px-6 py-2 rounded-full hover:bg-blue-700 transition-all shadow-lg hover:-translate-y-0.5 active:translate-y-0 active:scale-95"
             >
               <div className="p-2 bg-white/20 rounded-full">
@@ -106,7 +108,7 @@ const Navbar = () => {
               </div>
               <div className="flex flex-col">
                 <span className="text-[10px] font-bold uppercase tracking-wider opacity-90 leading-none">Call Now</span>
-                <span className="text-sm font-bold">+91 95809 08191</span>
+                <span className="text-sm font-bold">{number}</span>
               </div>
             </a>
           </div>
@@ -114,7 +116,9 @@ const Navbar = () => {
           {/* Mobile Menu Button */}
           <div className="lg:hidden flex items-center gap-4">
             <a
-              href={`https://wa.me/+919580908191?text=${encodeURIComponent("Hello, I need help with my visa application.")}`}
+              href={`https://wa.me/${number}?text=${encodeURIComponent("Hello, I need help with my visa application.")}`}
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-green-500"
             >
               <FaWhatsapp className="w-6 h-6" />
